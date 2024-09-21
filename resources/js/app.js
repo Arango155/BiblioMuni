@@ -5,7 +5,7 @@ import { createApp } from 'vue';
 import ExampleComponent from './components/ExampleComponent.vue';
 const app1 = createApp({});
 app1.component('example-component', ExampleComponent);
-app1.mount('#app');
+app1.mount('#ejemplo');
 
 // Montar el componente de carrusel
 import CarruselComponent from './components/CarruselComponent.vue';
@@ -25,3 +25,10 @@ import FooterComponent from './components/FooterComponent.vue';
 const app4 = createApp({});
 app4.component('footer-component', FooterComponent);
 app4.mount('#footer');
+
+
+// Registrar el componente de tarjeta
+import CardElement from './components/CardElement.vue';
+const app = createApp({});
+app.component('card-element', CardElement);
+app.mount('#app');
