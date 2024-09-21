@@ -1,3 +1,4 @@
+
 @extends('templates.base')
 
 @section('right')
@@ -11,6 +12,7 @@
 
 
 @section('body')
+
 
 
     <div class="content">
@@ -27,15 +29,19 @@
 
         <div class="espacio"></div>
 
-        <div id="carrusel">
-            <carrusel-component></carrusel-component>
-        </div>
+       <div id="carrusel">
+        <carrusel-component></carrusel-component>
+       </div>
 
         <div class="espacio"></div>
 
         <h4>Puedes leer los libros aqui! 👇🏽</h4>
         <br>
-        <div id="map"></div>
+
+        <div id="map-component">
+        <mapa-component></mapa-component>
+        </div>
+        
         <script>
 
             function iniciarMap(){
